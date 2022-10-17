@@ -1,0 +1,109 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#main-div {
+    display: flex;
+    width: 100wh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.amarillo {
+    background-color: #FFFF00;
+}
+
+.salmon {
+    background-color: #FCE5CD;
+}
+
+.azul-marino {
+    background-color: #86D5F1;
+}
+
+.naranja {
+    background-color: #FFC000;
+}
+
+.cyan {
+    background-color: #00FFFF;
+}
+
+.gris {
+    background-color: #AEAAAA;
+}
+
+.verde-azulado {
+    background-color: #33CCCC;
+}
+
+.verde-vomito {
+    background-color: #B6D7A8;
+}
+
+.azul-depresion {
+    background-color: #C9DAF8;
+}
+
+.rosa {
+    background-color: #F1C4DA;
+}
+
+#main-table {
+    width: 75vw;
+    height: 75vh;
+}
+
+.cell-table {
+    height: 100%;
+}
+
+
+/* subcell -> celdas de las horas, días, patio y espacios en blanco */
+
+.subcell {
+    background-color: lightgrey;
+}
+
+#time-marker {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: .5%;
+}
+
+#time-marker-icon {
+    background-image: url('./img/icons/circle-solid.svg');
+    color: rgb(155, 3, 3);
+}
+
+#time-marker-line {
+    background-color: rgb(155, 3, 3);
+    width: 100%;
+}
+
+#test {
+    position: fixed;
+    top: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cincuenta-y-cinco-mins {
+    height: 15.27777%;
+}
+
+.sesenta-mins {
+    height: 16.66666%;
+}
+
+.treinta-mins {
+    height: 8.33333%;
+}
