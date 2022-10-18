@@ -42,7 +42,16 @@ function setMarkerHeight(time = null) {
         }
         currentHourMinutes = currentHour + ':' + currentMinutes;
     } else {
+        currentHour = time[0] + time[1];
+        currentMinutes = time[3] + time[4];
         currentHourMinutes = time;
+    }
+
+    console.log(typeof(time));
+    if (currentHour < 15 || (currentHour >= 21 && currentMinutes > 00)) {
+        timeMarker.style.display = 'none';
+    } else {
+        timeMarker.style.display = 'inherit';
     }
 
     // calculate what current hour is in percentage to max and min hour
@@ -59,7 +68,7 @@ function setMarkerHeight(time = null) {
 
     timeMarker.style.top = finalHeightPos + "px";
 
-    console.log(finalHeightPos + "px");
+    // console.log(finalHeightPos + "px");
 
     // // test Slider
     // let slider = document.getElementById('test-slider');
@@ -78,6 +87,7 @@ function setMarkerHeight(time = null) {
     // console.log(firstHout + ' - ' + lastHout);
 
 }
+
 
 
 window.onload = function() {
